@@ -10,7 +10,7 @@
     }
     .navbar__links {
         display: flex;
-        margin: 2rem  2rem 2rem;
+        margin: 2rem  0 2rem 6rem;
         .navbar_link {
             color: #A0A3A7;
             padding-right: 2rem;
@@ -35,7 +35,7 @@
         }
     }
 }
-$screen-sm-max: 702px;
+$screen-sm-max: 770px;
 @mixin sm {
     @media(max-width: #{$screen-sm-max}) {
         @content;
@@ -48,6 +48,7 @@ $screen-sm-max: 702px;
         }
         .navbar__links {
             margin: .8rem;
+            margin-left: 0;
             .navbar_link {
                 margin: 0;
                 margin-top: .5rem;
@@ -55,7 +56,7 @@ $screen-sm-max: 702px;
             }
         }
         .navbar_btn {
-            margin: 1.4rem .5rem .5rem 0;
+            margin: 1.4rem 1rem .5rem 0;
             padding: .3rem;
         }
     }

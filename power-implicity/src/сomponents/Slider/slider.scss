@@ -7,7 +7,6 @@
     .slider_title {
         font-size: 72px;
         line-height: 83px;
-        text-align: center;
         font-weight: 300;
         margin-bottom: 2rem;
     }
@@ -23,11 +22,11 @@
         border-image-slice: 1;
         background: transparent;
         padding: 1rem 6rem;
-        margin-bottom: 7rem;
+        margin-bottom: 4rem;
         &:hover {
             border-image: linear-gradient(90deg,#8061FD , #FC4060 90%);
             border-image-slice: 1;
-            transition: all .5s ease-out;
+            transition: all 1s ease-out;
         }
     }.btn_title {
         font-family: 'Source Sans Pro';
@@ -51,11 +50,11 @@
             margin: 1rem;
         }
         .slider_dot_1.active {
-            border-color: white;
+            border-color: #FFFFFF;
         }
     }  
 }
-$screen-sm-max: 600px;
+$screen-sm-max: 700px;
 @mixin sm {
     @media(max-width: #{$screen-sm-max}) {
         @content;
