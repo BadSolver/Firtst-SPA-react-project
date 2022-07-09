@@ -35,4 +35,28 @@
         }
     }
 }
-
+$screen-sm-max: 702px;
+@mixin sm {
+    @media(max-width: #{$screen-sm-max}) {
+        @content;
+    }
+}
+.navbar__container {
+    @include sm {
+        .navbar__logo {
+            margin: .5rem 0 .5rem .5rem
+        }
+        .navbar__links {
+            margin: .8rem;
+            .navbar_link {
+                margin: 0;
+                margin-top: .5rem;
+                padding: .3rem;
+            }
+        }
+        .navbar_btn {
+            margin: 1.2rem .5rem .5rem 0;
+            padding: .3rem;
+        }
+    }
+}
