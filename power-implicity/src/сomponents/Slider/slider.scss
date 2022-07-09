@@ -27,7 +27,7 @@
         &:hover {
             border-image: linear-gradient(90deg,#8061FD , #FC4060 90%);
             border-image-slice: 1;
-            transition: all .5s ease-out;
+            transition: all 1s ease-out;
         }
     }.btn_title {
         font-family: 'Source Sans Pro';
@@ -55,7 +55,7 @@
         }
     }  
 }
-$screen-sm-max: 600px;
+$screen-sm-max: 700px;
 @mixin sm {
     @media(max-width: #{$screen-sm-max}) {
         @content;
