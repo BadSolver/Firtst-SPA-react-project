@@ -1,5 +1,5 @@
 import "./navbar.scss";
-import navbarLogo from "../assets/navbar_logo.png";
+import navbarLogo from "/Users/User/Desktop/VScode course/TMS/first-SPA-project-react/Firtst-SPA-react-project/power-implicity/src/assets/navbar_logo.png";
 
 export const Navbar = () => {
   return (
