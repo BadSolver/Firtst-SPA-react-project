@@ -1,28 +1,32 @@
 import "./navbar.scss";
-import navbarLogo from "/Users/User/Desktop/VScode course/TMS/first-SPA-project-react/Firtst-SPA-react-project/power-implicity/src/assets/navbar_logo.png";
+import { ReactComponent as Logo } from '../../assets/logo.svg'
 
 export const Navbar = () => {
   return (
-    <div className="navbar__container">
-      <div className="navbar__logo">
-        <a href="https://github.com/BadSolver">
-          <img src={navbarLogo} alt="logo" />
-        </a>
-      </div>
-      <div className="navbar__links">
-        <ul className="navbar_link">
-          <a href="https://github.com/BadSolver">Features</a>
-        </ul>
-        <ul className="navbar_link">
-          <a href="https://github.com/BadSolver">Partners</a>
-        </ul>
-        <ul className="navbar_link">
-          <a href="https://github.com/BadSolver">Stories</a>
-        </ul>
-      </div>
-      <div className="navbar__dwn-btn">
-        <button className="navbar_btn">Download for free</button>
-      </div>
-    </div>
+    <nav className="navbar">
+      <a className="navbar__logo" href="!#">
+        <Logo/>
+      </a>
+      <ul className="navbar__list">
+        <li className="navbar__item">
+          <a className="navbar__link" href="!#">
+            Features
+          </a>
+        </li>
+        <li className="navbar__item">
+          <a className="navbar__link" href="!#">
+            Partners
+          </a>
+        </li>
+        <li className="navbar__item">
+          <a className="navbar__link" href="!#">
+            Stories
+          </a>
+        </li>
+      </ul>
+      <button className="navbar__btn" type="button">
+        Download for free
+      </button>
+    </nav>
   );
 };
