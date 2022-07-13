@@ -55,7 +55,7 @@
         }
     }  
 }
-$screen-sm-max: 700px;
+$screen-sm-max: 768px;
 @mixin sm {
     @media(max-width: #{$screen-sm-max}) {
         @content;
